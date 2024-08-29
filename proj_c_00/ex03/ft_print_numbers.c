@@ -6,7 +6,7 @@
 /*   By: malzir-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/29 12:11:46 by malzir-d          #+#    #+#             */
-/*   Updated: 2024/08/29 12:25:52 by malzir-d         ###   ########.fr       */
+/*   Updated: 2024/08/29 18:04:07 by malzir-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,17 +16,17 @@ void	ft_print_numbers(void)
 {
 	int	i;
 
-	i = 0;
-	while (i <= 9)
+	i = 48;
+	while (i <= 57)
 	{
-		write(1, &i, 1);
+		write(1, &i, 4);
 		i++;
 	}
 }
 
-int	main (void)
+int	main(void)
 
 {
-	ft_print_numbers (0);
+	ft_print_numbers ();
 	return (0);
 }
